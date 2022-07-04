@@ -1,0 +1,141 @@
+/*Master Style*/
+
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Header Styles*/
+
+.header {
+    height: 10vh;
+    background-color: #154360;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper {
+    padding-left: 5%;
+}
+
+.logo {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 90%;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.title {
+    font-size: 46px;
+    font-weight: 800;
+    color: white;
+}
+
+.favorite-sites {
+    height: auto;
+    background-image: url(images/japan-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.favorite-sites ul {
+    height: 90vh;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+.favorite-sites ul > li {
+    height: fit-content;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    background-color: rgba(26, 82, 118, .95);
+    border-radius: 15px;
+}
+
+.favorite-sites ul > li > p {
+    padding-top: 10px;
+    color: white;
+}
+
+.favorite-sites ul > li > a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite-sites ul > li > a > img {
+    height: 100px;
+}
+
+#coding {
+    height: 90vh;
+    background-color: #ccc;
+}
+
+#misc {
+    height: 90vh;
+    background-color: #ccc;
+}
+
+/*tab styles*/
+
+.tab-wrapper {
+    overflow: hidden;
+    height: fit-content;
+    padding-left: 12.5px;
+}
+
+.tab-wrapper button {
+    height: 10vh;
+    background-color: inherit;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 46px;
+    font-weight: 800;
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.tab-wrapper button:hover {
+    background-color: rgb(26, 82, 118);
+}
+
+.tab-wrapper > .active {
+    background-color: rgb(26, 82, 118);
+}
+
+.tabcontent {
+    display: none;
+    border-top: none;
+}
+
+/*Footer Styles*/
+
+.footer {
+    height: 15vh;
+    background-color: #34495E;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="tab-effects.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-wrapper">
+            <div class="logo">
+                <img src="images/Bookmark-PNG-File.png">
+            </div>
+        </div>
+        <div class="title-wrapper">
+            <div class="title">
+                Bookmarks
+            </div>
+        </div>
+        <div class="tab-wrapper">
+            <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'favorites')">Most Used</button>
+            <button class="tablinks" onclick="openTab(event, 'coding')">Coding Resources</button>
+            <button class="tablinks" onclick="openTab(event, 'misc')">Miscellaneous</button>
+        </div>
+    </header>
+    <section class="bookmark-items">
+
+        <!--Tab Links-->
+        
+        
+
+        <!--Tab Content-->
+
+        <div id="favorites" class="tabcontent">
+            <div class="favorite-sites">
+                <ul>
+                    <li>
+                        <a href="https://youtube.com/"><img src="images/youtube.png"></a>
+                        <p>YouTube</p>
+                    </li>
+                    <li>
+                        <a href="https://amazon.com/"><img src="images/logistics.png"></a>
+                        <p>Amazon</p>
+                    </li>
+                    <li>
+                        <a href="https://myvsu.valdosta.edu/"><img src="images/college.png"></a>
+                        <p>MyVSU</p>
+                    </li>
+                    <li>
+                        <a href="https://outlook.com/"><img src="images/outlook.png"></a>
+                        <p>Outlook</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/"><img src="images/github.png"></a>
+                        <p>GitHub</p>
+                    </li>
+                    <li>
+                        <a href="https://educative.io/"><img src="images/code.png"></a>
+                        <p>Educative</p>
+                    </li>
+                    <li>
+                        <a href="https://humblebundle.com/"><img src="images/letter-h.png"></a>
+                        <p>Humble Bundle</p>
+                    </li>
+                    <li>
+                        <a href="https://hulu.com/" id="hulu-anchor"><img src="images/hulu.png"></a>
+                        <p>Hulu</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="coding" class="tabcontent">
+            <h2>
+                Coding Resources
+            </h2>
+            <ul>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+                <li><a href=""><img src=""></a></li>
+            </ul>
+        </div>
+        
+        <div id="misc" class="tabcontent">
+            <h2>
+                Miscellaneous
+            </h2>
+        </div>
+
+        <script>
+            document.getElementById("defaultOpen").click();
+        </script>
+    </section>
+    <footer class="footer">
+        <p>
+            Freepik
+            Rohim
+        </p>
+    </footer>
+</body>
+</html>
