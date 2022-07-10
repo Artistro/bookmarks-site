@@ -140,3 +140,24 @@
     height: 15vh;
     background-color: #34495E;
 }
+
+/*MEDIA STYLES*/
+
+@media only screens and (max-width: 1080px) {
+    .tab-wrapper button {
+        height: 10vh;
+        background-color: inherit;
+        padding-left: 12.5px;
+        padding-right: 12.5px;
+        border: none;
+        border-radius: 15px;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 36px;
+        font-weight: 800;
+        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+}
