@@ -17,7 +17,7 @@
 }
 
 .logo-wrapper {
-    padding-left: 5%;
+    padding-left: 2.5%;
 }
 
 .logo {
@@ -33,11 +33,11 @@
 .title-wrapper {
     display: flex;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 2.5%;
 }
 
 .title {
-    font-size: 46px;
+    font-size: 3rem;
     font-weight: 800;
     color: white;
 }
@@ -56,22 +56,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 25px;
+    padding-top: 2.5%;
 }
 
 .favorite-sites ul > li {
     height: fit-content;
-    width: 200px;
+    width: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 1.5%;
     background-color: rgba(26, 82, 118, .95);
     border-radius: 15px;
 }
 
+@media only screen and (max-width: 1080px) {
+    .favorite-sites ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+    .favorite-sites ul > li {
+        padding: 2.5%;
+        width: fit-content;
+    }
+}
+
 .favorite-sites ul > li > p {
-    padding-top: 10px;
+    padding-top: 2.5%;
     color: white;
 }
 
@@ -100,21 +114,23 @@
 
 .tab-wrapper {
     overflow: hidden;
-    height: fit-content;
-    padding-left: 12.5px;
+    height: 10vh;
+    padding-left: 1.25%;
+    width: fit-content;
+    width: 100%;
 }
 
 .tab-wrapper button {
     height: 10vh;
     background-color: inherit;
-    padding-left: 12.5px;
-    padding-right: 12.5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     border: none;
     border-radius: 15px;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    font-size: 46px;
+    font-size: 3rem;
     font-weight: 800;
     color: white;
     text-decoration: underline;
@@ -143,21 +159,3 @@
 
 /*MEDIA STYLES*/
 
-@media only screens and (max-width: 1080px) {
-    .tab-wrapper button {
-        height: 10vh;
-        background-color: inherit;
-        padding-left: 12.5px;
-        padding-right: 12.5px;
-        border: none;
-        border-radius: 15px;
-        outline: none;
-        cursor: pointer;
-        transition: 0.3s;
-        font-size: 36px;
-        font-weight: 800;
-        color: white;
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-    }
-}
